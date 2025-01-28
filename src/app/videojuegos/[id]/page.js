@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { use } from "react";  
+import Link from "next/link";
 
 export default function Article({ params }) {
     const { id } = use(params);
@@ -142,6 +143,10 @@ export default function Article({ params }) {
                     <p><b>Estado de completado: </b>{article.completado ? 'Si' : 'No'}</p>
                     <br />
                     <button onClick={() => setIsEditing(true)}>Editar</button>
+                    <Link href={"/videojuegos"}>
+                    <button>Volver</button>
+                    </Link>
+                    
                 </>
             )}
         </div>
