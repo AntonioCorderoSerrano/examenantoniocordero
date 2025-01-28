@@ -62,7 +62,6 @@ export default function createArticle() {
         }
     }
     
-
     return (
         <div>
             <h1>Añadir videojuego</h1>

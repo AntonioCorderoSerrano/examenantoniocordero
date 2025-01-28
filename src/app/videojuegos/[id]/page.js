@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { use } from "react";  
 
 export default function Article({ params }) {
-    const { id } = use(params);  // Desenrollar params
+    const { id } = use(params);
     const [article, setArticle] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
     const [formData, setFormData] = useState({
