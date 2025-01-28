@@ -56,8 +56,8 @@ export default function createArticle() {
             const error = await response.json();
             alert("Error al crear el videojuego");
             return new Response(
-                JSON.stringify({ success: "Artículo actualizado exitosamente!" }),
-                { status: 200 }
+                JSON.stringify({ error: "Ocurrió un error al crear el videojuego." }),
+                { status: 400 }
             );
         }
     }

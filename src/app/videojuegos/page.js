@@ -21,7 +21,6 @@ export default function EventoList() {
         }
     } 
 
-    // Función para eliminar un artículo
     async function deleteArticle(idDelete) {
         if (window.confirm("Desea eliminar este articulo del blog?")) {
             await fetch("api/article", {
@@ -48,7 +47,6 @@ export default function EventoList() {
                 completado: !currentCompletado, 
             }),
         });
-        // Recargar eventos después de cambiar el estado
         fetchEventos();
     }
 
